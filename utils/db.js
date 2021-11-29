@@ -11,9 +11,7 @@ var sql = require('./sql')
 const paramList = (obj) => {
     let paramArr = [];
     for (let key in obj) {
-        if (obj[key]) {
-            paramArr.push(obj[key]);
-        }
+        paramArr.push(obj[key]);
     }
     return paramArr;
 };
